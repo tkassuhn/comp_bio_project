@@ -8,6 +8,7 @@ version = "0.1.0"
 [tasks]
 tree = { cmd = "mkdir -p results && iqtree3 -s data/sars-cov-2.fasta -m HKY -seed 1 -T 1 --prefix results/tree --redo", description = "Estimate a maximum likelihood tree with IQ-TREE" }
 get-data = { cmd = "mkdir -p data && curl -L -o data/sars-cov-2.fasta https://raw.githubusercontent.com/phyletica/intro-to-comp-bio/refs/heads/main/notebooks/data/SARS-CoV-2.nextclade.aligned.fasta", description = "Download the SARS-CoV-2 alignment" }
+clock = { cmd = "python scripts/clock.py", depends-on = ["tree"], description = "Fit a molecular clock to the tree" }
 
 [dependencies]
 python = "3.14.*"
