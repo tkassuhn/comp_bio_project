@@ -1,6 +1,6 @@
 [workspace]
 authors = ["tkassuhn <trk0040@auburn.edu>"]
-channels = ["conda-forge"]
+channels = ["conda-forge", "bioconda"]
 name = "comp_bio_project"
 platforms = ["linux-64"]
 version = "0.1.0"
@@ -12,3 +12,4 @@ python = "3.14.*"
 numpy = ">=2.5.5,<3"
 scipy = ">=1.18.1,<2"
 matplotlib = ">=3.11.2,<4"
+iqtree = ">=3.1.4,<4"
