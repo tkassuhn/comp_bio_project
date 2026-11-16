@@ -218,7 +218,7 @@ if __name__ == "__main__":
     genome_length = 29903
     
     # Lineages to leave out of the clock (e.g., ["Omicron"])
-    excluded_lineages = []
+    excluded_lineages = ["Omicron"]
 
     # ----------------------------------------------------------------------- #
     # The analysis
